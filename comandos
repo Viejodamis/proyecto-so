@@ -1,0 +1,15 @@
+//PARA INICIAR LA CONEXION://
+ssh estudiante@10.43.103.117
+
+//CONTRASEÑA//
+4v3struz/344
+
+//ENTRAR AL PROYECTO//
+cd ~/proyecto-so
+
+//EJECUTAR PROYECTO//
+bash ~/iniciar.sh
+
+
+//TOKEN //
+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

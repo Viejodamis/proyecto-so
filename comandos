@@ -16,3 +16,9 @@ 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
 
 //VPN//
 https://arpuj.javeriana.edu.co/vdesk/webtop.eui?z=/Common/javeriana_na_res&webtop=/Common/javeriana_webtop&webtop_type=webtop_na_only
+
+
+//abrir el nano de algun archivo//
+cd ~/proyecto-so
+cp -f src/controlador.c src/controlador.backup.c 2>/dev/null || true
+nano src/controlador.c

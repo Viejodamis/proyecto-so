@@ -1,0 +1,43 @@
+//PARA INICIAR LA CONEXION://
+ssh estudiante@10.43.103.117
+
+//CONTRASEÑA//
+4v3struz/344
+
+//ENTRAR AL PROYECTO//
+cd ~/proyecto-so
+
+//EJECUTAR PROYECTO//
+bash ~/iniciar.sh
+
+
+//TOKEN //
+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
+
+//VPN//
+https://arpuj.javeriana.edu.co/vdesk/webtop.eui?z=/Common/javeriana_na_res&webtop=/Common/javeriana_webtop&webtop_type=webtop_na_only
+
+
+//abrir el nano de controlador//
+cd ~/proyecto-so
+cp -f src/controlador.c src/controlador.backup.c 2>/dev/null || true
+nano src/controlador.c
+
+
+//abrir el nano de agente//
+$ cd ~/proyecto-so
+cp -f src/agente.c src/agente.backup.c 2>/dev/null || true
+nano src/agente.c
+
+//EJEMPLO PARA EJECUTAR AGENTE//
+cd ~/proyecto-so
+mkdir -p data
+# 3 solicitudes para la misma hora (8) + otra a las 10 para forzar reprogramación
+printf "Zuluaga,8,10\nDominguez,8,4\nRojas,8,10\nPerez,10,5\n" > data/A.csv
+./bin/agente -s AgenteA -a data/A.csv -p /tmp/pipe1
+
+
+
+//verificar en que carpeta estoy parado//
+pwd
+ls -l

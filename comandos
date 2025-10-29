@@ -28,3 +28,16 @@ nano src/controlador.c
 $ cd ~/proyecto-so
 cp -f src/agente.c src/agente.backup.c 2>/dev/null || true
 nano src/agente.c
+
+//EJEMPLO PARA EJECUTAR AGENTE//
+cd ~/proyecto-so
+mkdir -p data
+# 3 solicitudes para la misma hora (8) + otra a las 10 para forzar reprogramación
+printf "Zuluaga,8,10\nDominguez,8,4\nRojas,8,10\nPerez,10,5\n" > data/A.csv
+./bin/agente -s AgenteA -a data/A.csv -p /tmp/pipe1
+
+
+
+//verificar en que carpeta estoy parado//
+pwd
+ls -l
